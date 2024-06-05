@@ -10,6 +10,10 @@ import rivaldoj from '../assets/drRivaldo.png';
 import jannifer from '../assets/Janiffer-Miranda-Lacet-cardiologista.jpg';
 import janio from '../assets/janioMacielOptometrista.png';
 import medico from '../assets/medico.png';
+import adans from '../assets/neuroadans.jpg'
+import flavia from '../assets/flavia.png'
+import pneumologista from '../assets/pneumologista.png'
+import psiquiatra from '../assets/psiquiatra.jpg'
 import { MdHearing } from "react-icons/md";
 import { GiHeartOrgan } from "react-icons/gi";
 import { GiBrain } from "react-icons/gi";
@@ -32,6 +36,14 @@ import { GiPelvisBone } from "react-icons/gi";
 import { MdElderly } from "react-icons/md";
 import { FaTeamspeak } from "react-icons/fa6";
 import { MdHealthAndSafety } from "react-icons/md";
+import { RiPsychotherapyFill } from "react-icons/ri";
+import { FaLungsVirus } from "react-icons/fa";
+import { IoIosWoman } from "react-icons/io";
+import { FaUserDoctor } from "react-icons/fa6";
+import { GiSkeletonInside } from "react-icons/gi";
+import { FaHandsHelping } from "react-icons/fa";
+
+
 
 
 const Especialidades = () => {
@@ -49,76 +61,26 @@ const Especialidades = () => {
 
   const especialidadesEMedicos = [
     {
+      nome: 'Angiologista',
+      icone: <FaUserDoctor/>,
+      medicos: [
+        { nome: 'Dr. Luciano Chagas', foto: luciano, Dias: 'CRM/AL: 4416 | RQE: 3917/3971', Horarios: " " }
+      ]
+    },
+    {
+      nome: 'Alergista',
+      icone: <FaHandDots/>,
+      medicos: [
+        { nome: 'Dra. Clarissa Tenório', foto: clarissa, Dias: 'CRM/AL: 2341 | RQE: 1569', Horarios: " " }
+      ]
+    },
+    {
       nome: 'Cardiologia',
       icone: <GiHeartOrgan />,
       medicos: [
-        { nome: 'Dra. Janiffer Lacet', foto: jannifer, Dias: '15 em 15 Sexta ou Sábado', Horarios: "A partir de 8h" },
-        { nome: 'Dr. Luciano Chagas', foto: luciano, Dias: 'Quinta-feira', Horarios: "A partir das 10h" },
-        { nome: 'Dr. Ariquenes Lyra', foto: medico , Dias: 'De 15 em 15', Horarios: "Horário marcado" },
-        { nome: 'Dr. Janio Araruna', foto: medico , Dias: 'De 15 em 15', Horarios: "Horário marcado" },
-
-      ]
-    },
-    {
-      nome: 'Pediatria',
-      icone: <FaChild />,
-      medicos: [
-        { nome: 'Dra. Mônica Amélia', foto: monica, Dias: 'Segunda a sexta', Horarios: "10h às 20h" },
-        { nome: 'Dra. Camila Gerbi', foto: medico, Dias: 'Segunda a sexta', Horarios: "10h às 20h" },
-      ]
-    },
-    {
-      nome: 'Urologia',
-      icone: <BsLungsFill/>,
-      medicos: [
-        { nome: 'Dr. Eduardo Nunes', foto: eduardo, Dias: 'Segunda a sexta', Horarios: "8h às 18h" }
-      ]
-    },
-    {
-      nome: 'Optometrista',
-      icone: <TbScanEye/>,
-      medicos: [
-        { nome: 'Dr. Janio Maciel', foto: janio, Dias: 'Segunda a sexta', Horarios: "8h às 16h" },
-        { nome: 'Dra. Flávia Melina', foto: janio, Dias: 'Segunda a sexta', Horarios: "8h às 16h" },
-      ]
-    },
-    {
-      nome: 'Reumatologia',
-      icone: <GiSkeletalHand/>,
-      medicos: [
-        { nome: 'Dra. Ana Gonçalves', foto: ana, Dias: 'Segunda a sexta', Horarios: "7h às 18h" }
-      ]
-    },
-    {
-      nome: 'Otorrinolaringologista',
-      icone: <IoEarOutline/>,
-      medicos: [
-        { nome: 'Dra. Nathália Uchoa', foto: medico, Dias: 'Segunda a sexta', Horarios: "7h às 18h" },
-        { nome: 'Dr. Wesley Vilela', foto: medico, Dias: 'Segunda a sexta', Horarios: "7h às 18h" },
-
-      ]
-    },
-    {
-      nome: 'Oftamologista',
-      icone: <IoIosEye/>,
-      medicos: [
-        { nome: 'Dr. Andre Gusmão', foto: medico, Dias: 'Segunda a sexta', Horarios: "7h às 18h" },
-
-      ]
-    },
-    {
-      nome: 'Gerontologista',
-      icone: <IoIosEye/>,
-      medicos: [
-        { nome: 'Dr. Crismédio Costa', foto: medico, Dias: 'Segunda a sexta', Horarios: "7h às 18h" },
-
-      ]
-    },
-    {
-      nome: 'Terapeuta Ocupacional',
-      icone: <IoIosEye/>,
-      medicos: [
-        { nome: 'Dra. Elizabete Carvalho', foto: medico, Dias: 'Segunda a sexta', Horarios: "7h às 18h" },
+        { nome: 'Dra. Janiffer Lacet', foto: jannifer, Dias: 'CRM/AL: 5526', Horarios: " " },
+        { nome: 'Dr. Ariquenes Lyra', foto: medico , Dias: '', Horarios: " " },
+        { nome: 'Dr. Janio Araruna', foto: medico , Dias: '', Horarios: " " },
 
       ]
     },
@@ -126,91 +88,168 @@ const Especialidades = () => {
       nome: 'Coloproctologista',
       icone: <GiPelvisBone/>,
       medicos: [
-        { nome: 'Dr. Arthur Manoel', foto: medico, Dias: 'Segunda a sexta', Horarios: "7h às 18h" },
+        { nome: 'Dr. Arthur Manoel', foto: medico, Dias: 'CRM/AL: 5356 |RQE: 3647/3648 ', Horarios: "" },
 
-      ]
-    },
-    {
-      nome: 'Fonoaudiologia',
-      icone: <FaTeamspeak/>,
-      medicos: [
-        { nome: 'Dr. Mylena Dias', foto: medico, Dias: 'Segunda a sexta', Horarios: "7h às 18h" },
-
-      ]
-    },
-    {
-      nome: 'Endocrinologia',
-      icone: <GiStomach/>,
-      medicos: [
-        { nome: 'Dr. Sirlean Sena', foto: medico, Dias: 'Segunda a sexta', Horarios: "7h às 18h" },
-        { nome: 'Dra. Regina Cavalcante', foto: medico, Dias: 'Segunda a sexta', Horarios: "7h às 18h" },
-
-      ]
-    },
-    {
-      nome: 'Neurologia',
-      icone: <FaBrain/>,
-      medicos: [
-        { nome: 'Dr. Matheus Pires', foto: medico, Dias: 'Segunda a sexta', Horarios: "7h às 18h" },
-      ]
-    },
-    {
-      nome: 'Médico do Trabalho',
-      icone: <MdAddHomeWork/>,
-      medicos: [
-        { nome: 'Dr. Israel Gomes', foto: medico, Dias: 'Segunda a sexta', Horarios: "7h às 18h" },
-      ]
-    },
-    {
-      nome: 'Alergista',
-      icone: <FaHandDots/>,
-      medicos: [
-        { nome: 'Dra. Clarissa Tenório', foto: clarissa, Dias: 'Segunda a sexta', Horarios: "7h às 18h" }
-      ]
-    },
-    {
-      nome: 'Clínico Geral',
-      icone: <FaNotesMedical/>,
-      medicos: [
-        { nome: 'Dr. Rivaldo Cavalcante', foto: rivaldoj, Dias: 'Segunda a sexta', Horarios: "7h às 18h" },
-        { nome: 'Dra. Marcela Almeida', foto: medico, Dias: 'Segunda a sexta', Horarios: "7h às 18h" },
       ]
     },
     {
       nome: 'Dermatologia',
       icone: <FaHandHoldingMedical/>,
       medicos: [
-        { nome: 'Dra. Daniela Azevedo', foto: medico, Dias: 'Segunda a sexta', Horarios: "7h às 18h" }
+        { nome: 'Dra. Daniela Azevedo', foto: medico, Dias: '', Horarios: "" }
+      ]
+    },
+    {
+      nome: 'Endocrinologia',
+      icone: <GiStomach/>,
+      medicos: [
+        { nome: 'Dr. Sirlean Sena', foto: medico, Dias: 'CRM 2673 AL | RQE 774', Horarios: "" },
+        { nome: 'Dra. Regina Cavalcante', foto: medico, Dias: 'CRM/AL: 2664 | RQE 631', Horarios: " " },
+
+      ]
+    },
+    {
+      nome: 'Fisioterapeuta',
+      icone: <MdFoodBank />,
+      medicos: [
+        { nome: 'Dra. Debora Dias', foto: medico, Dias: 'CREFITO 1 / 394529F', Horarios: " " },
+        { nome: 'Dra. Quitéria Batista', foto: medico, Dias: ' ', Horarios: " " },
+      ]
+    },
+    {
+      nome: 'Fonoaudiologia',
+      icone: <FaTeamspeak/>,
+      medicos: [
+        { nome: 'Dr. Mylena Dias', foto: medico, Dias: 'CRFa 4-14651', Horarios: "" },
+
+      ]
+    },
+    {
+      nome: 'Ginecologista Obstetra',
+      icone: <IoIosWoman/>,
+      medicos: [
+        { nome: 'Dra. Fernanda Leila', foto: medico, Dias: 'CRM/AL: 6878 | RQE: 4224', Horarios: "" },
+
+      ]
+    },
+    {
+      nome: 'Médico do Trabalho',
+      icone: <MdAddHomeWork/>,
+      medicos: [
+        { nome: 'Dr. Israel Gomes', foto: medico, Dias: ' ', Horarios: " " },
+      ]
+    },
+    {
+      nome: 'Neurologia',
+      icone: <FaBrain/>,
+      medicos: [
+        { nome: 'Dr. Adans Soares', foto: adans, Dias: 'CRM/AL: 5608 | RQE 3760', Horarios: "" },
       ]
     },
     {
       nome: 'Nutricionista',
       icone: <MdFoodBank />,
       medicos: [
-        { nome: 'Dra. Risoneide Vasconcelos ', foto: medico, Dias: 'Segunda a sexta', Horarios: "7h às 18h" },
-        { nome: 'Dra. Beatriz Gnoatto', foto: medico, Dias: 'Segunda a sexta', Horarios: "7h às 18h" },
-        { nome: 'Dra. Barbara Gabriela', foto: medico, Dias: 'Segunda a sexta', Horarios: "7h às 18h" },
-        { nome: 'Dr. Gabriel de Sena', foto: medico, Dias: 'Segunda a sexta', Horarios: "7h às 18h" },
-        { nome: 'Dra. Kelly Lima', foto: medico, Dias: 'Segunda a sexta', Horarios: "7h às 18h" },
-        { nome: 'Dra. Manuele Azevedo', foto: medico, Dias: 'Segunda a sexta', Horarios: "7h às 18h" },
+        { nome: 'Dra. Risoneide Vasconcelos ', foto: medico, Dias: '', Horarios: "" },
+        { nome: 'Dra. Beatriz Gnoatto', foto: medico, Dias: '', Horarios: "" },
+        { nome: 'Dra. Barbara Gabriela', foto: medico, Dias: '', Horarios: "" },
+        { nome: 'Dr. Gabriel de Sena', foto: medico, Dias: '', Horarios: "" },
+        { nome: 'Dra. Kelly Lima', foto: medico, Dias: '', Horarios: "" },
+        { nome: 'Dra. Manuele Azevedo', foto: medico, Dias: '', Horarios: "" },
+      ]
+    },
+    {
+      nome: 'Optometrista',
+      icone: <TbScanEye/>,
+      medicos: [
+        { nome: 'Dr. Janio Maciel', foto: janio, Dias: 'SROO/AL: 1009 | CBOO: 006', Horarios: "" },
+        { nome: 'Dra. Flávia Melina', foto: flavia, Dias: 'SROO/AL: 1338 | CBOO: 02.00401-1', Horarios: "" },
+      ]
+    },
+    {
+      nome: 'Otorrinolaringologista',
+      icone: <IoEarOutline/>,
+      medicos: [
+        { nome: 'Dr. Wesley Vilela', foto: medico, Dias: 'CRM/AL: 6144 | RQE: 3447', Horarios: " " },
+
+      ]
+    },
+    {
+      nome: 'Oftamologista',
+      icone: <IoIosEye/>,
+      medicos: [
+        { nome: 'Dr. Andre Gusmão', foto: medico, Dias: 'CRM/AL: 6997 ', Horarios: " " },
+
+      ]
+    },
+    {
+      nome: 'Ortopedista',
+      icone: <GiSkeletonInside/>,
+      medicos: [
+        { nome: 'Dr. Argemiro Neto', foto: medico, Dias: 'CRM/AL: 6997 ', Horarios: " " },
+
+      ]
+    },
+    {
+      nome: 'Pediatria',
+      icone: <FaChild />,
+      medicos: [
+        { nome: 'Dra. Mônica Amélia', foto: monica, Dias: 'CRM/AL: 2187 | RQE: 1.652/2.577', Horarios: "" },
+        { nome: 'Dra. Camila Gerbi', foto: medico, Dias: 'CRM/AL: 6888 | RQE: 4770/4771', Horarios: "" },
+      ]
+    },
+    {
+      nome: 'Reumatologia',
+      icone: <GiSkeletalHand/>,
+      medicos: [
+        { nome: 'Dra. Ana Gonçalves', foto: ana, Dias: 'CRM/AL: 2901', Horarios: " " }
+      ]
+    },
+    {
+      nome: 'Terapeuta Ocupacional',
+      icone: <FaHandsHelping/>,
+      medicos: [
+        { nome: 'Dra. Elizabete Carvalho', foto: medico, Dias: 'CREFITO: 23585', Horarios: " " },
+
+      ]
+    },
+    {
+      nome: 'Pneumologista',
+      icone: <FaLungsVirus />,
+      medicos: [
+        { nome: 'Dra. Thaysa Albuquerque', foto: pneumologista, Dias: 'CRM/AL: 6867 |  RQE 5248', Horarios: "" },
+      ]
+    },
+    {
+      nome: 'Psiquiatra',
+      icone: <RiPsychotherapyFill />,
+      medicos: [
+        { nome: 'Dra. Diogo Lima ', foto: psiquiatra, Dias: 'CRM/AL: 8673', Horarios: " " },
       ]
     },
     {
       nome: 'Psicologia',
       icone: <RiSpeakFill />,
       medicos: [
-        { nome: 'Dra. Carol Lessa', foto: medico, Dias: 'Segunda a sexta', Horarios: "7h às 18h" },
-        { nome: 'Dra. Carlony Silva', foto: medico, Dias: 'Segunda a sexta', Horarios: "7h às 18h" },
-        { nome: 'Dra. Denya Lessa', foto: medico, Dias: 'Segunda a sexta', Horarios: "7h às 18h" },
-        { nome: 'Dra. Débora Lessa', foto: medico, Dias: 'Segunda a sexta', Horarios: "7h às 18h" },
-        { nome: 'Dra. Elytania Vasconcelos', foto: medico, Dias: 'Segunda a sexta', Horarios: "7h às 18h" },
-        { nome: 'Dra. Jayne Limeira', foto: medico, Dias: 'Segunda a sexta', Horarios: "7h às 18h" },
-        { nome: 'Dra. Késily Lima', foto: medico, Dias: 'Segunda a sexta', Horarios: "7h às 18h" },
-        { nome: 'Dra. Luana Maria', foto: medico, Dias: 'Segunda a sexta', Horarios: "7h às 18h" },
-        { nome: 'Dra. Meirielly Ferreira', foto: medico, Dias: 'Segunda a sexta', Horarios: "7h às 18h" },
-        { nome: 'Dra. Tatiane', foto: medico, Dias: 'Segunda a sexta', Horarios: "7h às 18h" },
-        { nome: 'Dra. Tereza Neta', foto: medico, Dias: 'Segunda a sexta', Horarios: "7h às 18h" },
-        { nome: 'Dra. Thaysa Vasconcelos', foto: medico, Dias: 'Segunda a sexta', Horarios: "7h às 18h" }
+        { nome: 'Dra. Carol Lessa', foto: medico, Dias: '', Horarios: "" },
+        { nome: 'Dra. Carlony Silva', foto: medico, Dias: '', Horarios: "" },
+        { nome: 'Dra. Denya Lessa', foto: medico, Dias: '', Horarios: "" },
+        { nome: 'Dra. Débora Lessa', foto: medico, Dias: '', Horarios: "" },
+        { nome: 'Dra. Elytania Vasconcelos', foto: medico, Dias: '', Horarios: "" },
+        { nome: 'Dra. Jayne Limeira', foto: medico, Dias: '', Horarios: "" },
+        { nome: 'Dra. Késily Lima', foto: medico, Dias: '', Horarios: "" },
+        { nome: 'Dra. Luana Maria', foto: medico, Dias: '', Horarios: "" },
+        { nome: 'Dra. Meirielly Ferreira', foto: medico, Dias: '', Horarios: "" },
+        { nome: 'Dra. Tatiane', foto: medico, Dias: '', Horarios: "" },
+        { nome: 'Dra. Tereza Neta', foto: medico, Dias: '', Horarios: "" },
+        { nome: 'Dra. Thaysa Vasconcelos', foto: medico, Dias: '', Horarios: "" }
+      ]
+    },
+    {
+      nome: 'Urologia',
+      icone: <BsLungsFill/>,
+      medicos: [
+        { nome: 'Dr. Eduardo Nunes', foto: eduardo, Dias: 'CRM/AL: 4159 | RQE: 2258', Horarios: "" }
       ]
     }
     
